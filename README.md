@@ -1,2 +1,3 @@
 # learning-js
-in this repository I grading my skills into web. js is a start to use react
+
+in this repository I grading my skills into web. js as a start to use react
