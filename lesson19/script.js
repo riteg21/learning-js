@@ -95,7 +95,6 @@ function btnTrackHandler() {
     this.innerText = "Disabled Tracking";
   } else {
     table2.removeEventListener("click", table2ClickHandler);
-
     this.classList.remove("btn-danger");
     this.classList.add("btn-success");
     this.innerText = "Enabled tracking";

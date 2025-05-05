@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 23</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      header {
+        transition: all 0.4s;
+      }
+      .navbar-expand .navbar-nav .nav-link,
+      .navbar-brand.nav-link {
+        color: white;
+        padding-inline: 20px;
+      }
+      .navbar-nav .nav-link.active,
+      .navbar-expand .navbar-nav .nav-link.hover {
+        color: #ffc107;
+      }
+      .banner {
+        height: 700px;
+      }
+      .image {
+        height: 800px;
+        transition: all 0.4s;
+        transform: scale(0);
+      }
+      .image.animated {
+        transform: scale(1);
+      }
+
+      .btn-top {
+        position: fixed;
+        right: 5%;
+        bottom: 10%;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky-top bg-transparent border-bottom">
+      <nav class="navbar navbar-expand text-uppercase fw-bold">
+        <div class="container">
+          <a href="#" class="navbar-brand nav-link">My blog</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section1" class="nav-link">Section 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section2" class="nav-link">Section 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section3" class="nav-link">Section 3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner fluid-container bg-dark" id="home">
+        <div
+          class="container h-100 d-flex justify-content-center flex-column text-light"
+        >
+          <div class="fs-1 mb-2">Banner Example</div>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus dolore est eveniet aliquid quae nemo in, modi quis,
+            dolores illo aspernatur amet vel quasi laborum, nesciunt enim
+            inventore provident laboriosam!
+          </p>
+          <button class="btn btn-warning align-self-start">More info</button>
+        </div>
+      </section>
+      <section class="container py-5" id="section1">
+        <h2 class="my-2 text-uppercase fs-2 fw-bold">Section 1</h2>
+        <div class="row">
+          <div class="col-6 p-3">
+            <article>
+              <h3 class="mb-2">Article 1</h3>
+              <div class="image bg-dark mb-4"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                minima alias veritatis, deleniti eligendi, voluptas commodi cum
+                quis reprehenderit voluptate pariatur quidem! Consequatur
+                officiis dolor omnis voluptatibus quas laborum nihil.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                soluta optio est ut reprehenderit modi harum repellat, cum
+                doloribus voluptatum autem obcaecati mollitia placeat suscipit
+                impedit tempora iure eveniet odio.
+              </p>
+              <a href="#" class="btn btn-warning mt-3">More info</a>
+            </article>
+          </div>
+          <div class="col-6 p-3">
+            <article>
+              <h3 class="mb-2">Article 1</h3>
+              <div class="image bg-dark mb-4"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                minima alias veritatis, deleniti eligendi, voluptas commodi cum
+                quis reprehenderit voluptate pariatur quidem! Consequatur
+                officiis dolor omnis voluptatibus quas laborum nihil.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                soluta optio est ut reprehenderit modi harum repellat, cum
+                doloribus voluptatum autem obcaecati mollitia placeat suscipit
+                impedit tempora iure eveniet odio.
+              </p>
+              <a href="#" class="btn btn-warning mt-3">More info</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="container py-5" id="section2">
+        <h2 class="my-2 text-uppercase fs-2 fw-bold">Section 2</h2>
+        <div class="row">
+          <div class="col-6 p-3">
+            <article>
+              <h3 class="mb-2">Article 1</h3>
+              <div class="image bg-dark mb-4"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                minima alias veritatis, deleniti eligendi, voluptas commodi cum
+                quis reprehenderit voluptate pariatur quidem! Consequatur
+                officiis dolor omnis voluptatibus quas laborum nihil.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                soluta optio est ut reprehenderit modi harum repellat, cum
+                doloribus voluptatum autem obcaecati mollitia placeat suscipit
+                impedit tempora iure eveniet odio.
+              </p>
+              <a href="#" class="btn btn-warning mt-3">More info</a>
+            </article>
+          </div>
+          <div class="col-6 p-3">
+            <article>
+              <h3 class="mb-2">Article 1</h3>
+              <div class="image bg-dark mb-4"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                minima alias veritatis, deleniti eligendi, voluptas commodi cum
+                quis reprehenderit voluptate pariatur quidem! Consequatur
+                officiis dolor omnis voluptatibus quas laborum nihil.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                soluta optio est ut reprehenderit modi harum repellat, cum
+                doloribus voluptatum autem obcaecati mollitia placeat suscipit
+                impedit tempora iure eveniet odio.
+              </p>
+              <a href="#" class="btn btn-warning mt-3">More info</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="container py-5" id="section3">
+        <h2 class="my-2 text-uppercase fs-2 fw-bold">Section 3</h2>
+        <div class="row">
+          <div class="col-6 p-3">
+            <article>
+              <h3 class="mb-2">Article 1</h3>
+              <div class="image bg-dark mb-4"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                minima alias veritatis, deleniti eligendi, voluptas commodi cum
+                quis reprehenderit voluptate pariatur quidem! Consequatur
+                officiis dolor omnis voluptatibus quas laborum nihil.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                soluta optio est ut reprehenderit modi harum repellat, cum
+                doloribus voluptatum autem obcaecati mollitia placeat suscipit
+                impedit tempora iure eveniet odio.
+              </p>
+              <a href="#" class="btn btn-warning mt-3">More info</a>
+            </article>
+          </div>
+          <div class="col-6 p-3">
+            <article>
+              <h3 class="mb-2">Article 1</h3>
+              <div class="image bg-dark mb-4"></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+                minima alias veritatis, deleniti eligendi, voluptas commodi cum
+                quis reprehenderit voluptate pariatur quidem! Consequatur
+                officiis dolor omnis voluptatibus quas laborum nihil.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                soluta optio est ut reprehenderit modi harum repellat, cum
+                doloribus voluptatum autem obcaecati mollitia placeat suscipit
+                impedit tempora iure eveniet odio.
+              </p>
+              <a href="#" class="btn btn-warning mt-3">More info</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="fluid-container text-center py-5 text-light bg-dark">
+      2025 &copy; My blog
+    </footer>
+    <button class="btn btn-success btn-top">Top</button>
+    <script src="script.js"></script>
+  </body>
+</html>
