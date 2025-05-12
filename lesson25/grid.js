@@ -10,7 +10,7 @@ yellowBlock.addEventListener("dragstart", function (event) {
     column.addEventListener("dragover", function (event) {
       event.preventDefault();
     });
-    column.addEventListener("drop", function (event) {
+    column.addEventListener("drop", function () {
       column.append(yellowBlock);
     });
     columns[1].addEventListener("dragend", function (event) {
