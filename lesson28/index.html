@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 28</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      #user-form-data,
+      #user-json-data {
+        white-space: pre;
+      }
+      .mb-3 {
+        position: relative;
+      }
+      [class*="feedback"] {
+        position: absolute;
+        top: 4.6em;
+        left: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 28</h1>
+      <div class="row">
+        <div class="col-4">
+          <form action="#" name="user-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                minlength="4"
+                required
+              />
+              <div class="valid-feedback">Looks Good!</div>
+              <div class="invalid-feedback">Invalid data!</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+              <div class="valid-feedback">Looks Good!</div>
+              <div class="invalid-feedback">Invalid data!</div>
+            </div>
+            <div class="mb-3">
+              <label for="nick" class="form-label">Nick</label>
+              <input
+                type="text"
+                id="nick"
+                name="nick"
+                class="form-control"
+                required
+                pattern="^@\S+"
+              />
+              <div class="valid-feedback">Looks Good!</div>
+              <div class="invalid-feedback">Invalid data!</div>
+              <div class="form-text mt-3">Nick must starts with @ symbol</div>
+            </div>
+            <div class="mb-3">
+              <label for="age" class="form-label">Age</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                class="form-control"
+                required
+                min="18"
+                max="100"
+              />
+              <div class="valid-feedback">Looks Good!</div>
+              <div class="invalid-feedback">Invalid data!</div>
+            </div>
+            <div class="pt-3">
+              <button class="btn btn-success" type="submit">Send</button>
+              <button class="btn btn-secondary" type="button" id="to-json-btn">
+                To JSON
+              </button>
+              <button class="btn btn-dark" type="button" id="to-object-btn">
+                To Object
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-4 p-4">
+          <div class="bg-light border h-100 p-4" id="user-form-data"></div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="bg-light border h-100 p-4" id="user-json-data"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
