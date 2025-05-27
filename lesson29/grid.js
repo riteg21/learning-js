@@ -59,5 +59,8 @@ function sortBtnHandler() {
     info.className = "list-group-item";
     info.innerHTML = task;
     taskArrayInfo.append(info);
+    console.log(sortedTasks);
   });
 }
+
+console.log(taskArray);
