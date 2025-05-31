@@ -16,8 +16,8 @@ addTaskBtn.addEventListener("click", printDataIntoArray);
 const taskArray = [];
 // заносим данные в массив
 function printDataIntoArray(event) {
-  taskArray.sort((item1, item2) => item1.id - item2.id);
   event.preventDefault();
+  taskArray.sort((item1, item2) => item1.id - item2.id);
   const taskValue = taskInput.value;
   if (taskValue.trim() === "") {
     return;
