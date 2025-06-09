@@ -62,7 +62,7 @@ function showTopBtn(scrollY) {
   topBtn.hidden = scrollY < document.documentElement.clientHeight; // скрываем элемент если величина scrollY меньше размера страницы, но когда мы опускаемся на максимально допустимую величину страницы кнопка будет отображаться
 }
 
-// Отображение изображений при прокрутке 16:08
+// Отображение изображений при прокрутке
 function animateImageOnScroll() {
   for (let image of images) {
     if (
