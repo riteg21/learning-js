@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 34</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .product-icon,
+      .cart {
+        font-size: 80px;
+        width: 120px;
+        height: 120px;
+        border: 1px solid #686d76;
+        border-radius: 6px;
+        color: #686d76;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+      .product-icon:hover {
+        color: #6f4e37;
+        border-color: #6f4e37;
+        background-color: #f6fab9;
+      }
+      .cart {
+        color: #dc5f00;
+        border-color: #dc5f00;
+        background-color: #f6fab9;
+      }
+      .badge {
+        background-color: #686d76;
+      }
+      .badge-delete {
+        background-color: #a91d3a;
+        cursor: pointer;
+      }
+      .badge-total {
+        background-color: #dc5f00;
+      }
+      .fw-bold {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="py-4">Lesson 34</h1>
+      <div class="row">
+        <div class="col-4 mb-3">
+          <select name="category" id="category" class="form-select">
+            <option value="" selected disabled>Select category</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <div class="d-flex flex-wrap products"></div>
+        </div>
+        <div class="col-2">
+          <i class="fa-solid fa-bag-shopping cart"></i>
+        </div>
+        <div class="col-4">
+          <ol class="list-group list-group-numbered cart-content"></ol>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

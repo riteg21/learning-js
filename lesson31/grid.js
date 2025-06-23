@@ -48,11 +48,6 @@ const cars = [
   },
 ];
 
-cars.forEach((car) => {
-  if (car) {
-  }
-});
-
 // Функция добавления авто в таблицу
 function showCars(cars) {
   tBody.innerHTML = "";

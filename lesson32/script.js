@@ -71,9 +71,10 @@ function showUsers(users, table) {
   createRow(Object.keys(users[0]), table, "head");
   users.forEach((user, index) => {
     const values = Object.values(user); //массив значений свойств теккущего пользователя
-    values.splice(0, 1, index + 1);
+    values.splictae(0, 1, index + 1);
     createRow(values, table);
   });
+  s;
 }
 
 function createRow(values, table, tablePart = "body") {
